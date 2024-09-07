@@ -2,6 +2,14 @@
 
 ## install
 
+node version
+
+```powershell
+PS C:\Users\Administrator\Desktop\koffi-example> node -v
+v18.14.0
+PS C:\Users\Administrator\Desktop\koffi-example>
+```
+
 ```powershell
 npm install
 ```
@@ -15,7 +23,7 @@ node desktop.js
 result
 
 ```powershell
-PS C:\Users\Administrator\Desktop\koffi-sample> node desktop.js
+PS C:\Users\Administrator\Desktop\koffi-example> node desktop.js
 [hwnd, lParam] 1572928 0
 [hwnd, lParam] 1902364 0
 [hwnd, lParam] 66012 0
@@ -31,7 +39,7 @@ PS C:\Users\Administrator\Desktop\koffi-sample> node desktop.js
 [hwnd, lParam] 196706 0
 [hwnd, lParam] 264112 0
 EnumWindowsProc [External: 247923e8cc8]
-PS C:\Users\Administrator\Desktop\koffi-sample>
+PS C:\Users\Administrator\Desktop\koffi-example>
 ```
 
 ## 中文文档
