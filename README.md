@@ -1,6 +1,8 @@
 # koffi-example
 
-## install
+## env
+
+OS：Windows10/11
 
 node version
 
@@ -9,6 +11,8 @@ PS C:\Users\Administrator\Desktop\koffi-example> node -v
 v18.14.0
 PS C:\Users\Administrator\Desktop\koffi-example>
 ```
+
+## install
 
 ```powershell
 npm install
@@ -25,7 +29,7 @@ node desktop.js
 result
 
 ```powershell
-PS C:\Users\Administrator\Desktop\koffi-example> node desktop.js
+PS C:\Users\Administrator\Desktop\koffi-example> node .\desktop.js
 [hwnd, lParam] 1572928 0
 [hwnd, lParam] 1902364 0
 [hwnd, lParam] 66012 0
@@ -54,14 +58,25 @@ result
 
 ```powershell
 PS C:\Users\Administrator\Desktop\koffi-example> node .\EnumDisplayMonitors.js
-rect1 { x: 0, y: 0, width: 2048, height: 1152 }
-Monitor handle: 131073
-Monitor lprcMonitor: [External: 1fa2328ffb8]
-rect1 { x: 2560, y: 0, width: 1920, height: 1080 }
-Monitor handle: 65592
-Monitor lprcMonitor: [External: 1fa2328ffb8]
-EnumDisplayMonitors: 3.033ms
-PS C:\Users\Administrator\Desktop\koffi-example>
+monitors [
+  {
+    x: 0,
+    y: 0,
+    width: 2048,
+    height: 1152,
+    isPrimaryMonitor: true,
+    workArea: { left: 0, top: 0, right: 2048, bottom: 1104 }
+  },
+  {
+    x: 2560,
+    y: 0,
+    width: 1920,
+    height: 1080,
+    isPrimaryMonitor: false,
+    workArea: { left: 2560, top: 0, right: 4480, bottom: 1032 }
+  }
+]
+EnumDisplayMonitors: 3.331ms
 ```
 
 ## 中文文档
