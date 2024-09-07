@@ -14,16 +14,12 @@ PS C:\Users\Administrator\Desktop\koffi-example>
 npm install
 ```
 
-## start
+## run
+
+### 1. 遍历所有屏幕并返回句柄 id
 
 ```powershell
 node desktop.js
-```
-
-获取所有显示器的坐标
-
-```powershell
-node EnumDisplayMonitors.js
 ```
 
 result
@@ -45,6 +41,26 @@ PS C:\Users\Administrator\Desktop\koffi-example> node desktop.js
 [hwnd, lParam] 196706 0
 [hwnd, lParam] 264112 0
 EnumWindowsProc [External: 247923e8cc8]
+PS C:\Users\Administrator\Desktop\koffi-example>
+```
+
+### 2. 获取所有显示器的句柄 id 和坐标
+
+```powershell
+node EnumDisplayMonitors.js
+```
+
+result
+
+```powershell
+PS C:\Users\Administrator\Desktop\koffi-example> node .\EnumDisplayMonitors.js
+rect1 { x: 0, y: 0, width: 2048, height: 1152 }
+Monitor handle: 131073
+Monitor lprcMonitor: [External: 1fa2328ffb8]
+rect1 { x: 2560, y: 0, width: 1920, height: 1080 }
+Monitor handle: 65592
+Monitor lprcMonitor: [External: 1fa2328ffb8]
+EnumDisplayMonitors: 3.033ms
 PS C:\Users\Administrator\Desktop\koffi-example>
 ```
 
