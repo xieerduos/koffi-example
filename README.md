@@ -20,6 +20,12 @@ npm install
 node desktop.js
 ```
 
+获取所有显示器的坐标
+
+```powershell
+node EnumDisplayMonitors.js
+```
+
 result
 
 ```powershell
